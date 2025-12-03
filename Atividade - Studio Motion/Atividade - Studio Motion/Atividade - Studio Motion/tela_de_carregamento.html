@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Carregamento - Studio Motion</title>
+</head>
+<style>
+
+    body{
+        background-color:  #c4dae6;
+    }
+
+
+    .contendo{
+        background-color: #f5f5f5d7;
+        border: none;
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        flex-direction: column;
+        display: flex;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    main{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+         margin-top: 320px ;
+         display: flex;
+    }
+    
+    .spin{
+            display: flex;
+            height: 50px;
+            width: 50px;
+            border: 5px solid  #4F61FF;
+            border-top: 5px solid white;
+            border-radius: 52px;
+            animation: spin 1s linear infinite;
+            align-items: center;
+            justify-content: center;
+
+          
+        }
+        @keyframes spin{
+            from {  transform: rotate(0deg);    }
+            to   {  transform: rotate(360deg);  }
+        }
+    
+    .container{
+        display: flex;
+        gap: 2px;
+        width: 100%;
+        margin-top: 50px;
+        border: 1px solid;
+        width: 400px;
+        
+    }
+
+    .caixa{
+            width: 50px;
+            height: 50px;
+            background-color: #4F61FF;
+            position: relative;
+            animation-name: deslizar;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+    }
+
+    .linear{animation-timing-function: linear ;}  
+
+    @keyframes deslizar {
+            from {left: 0;}
+            to {left:35%;}
+         }
+
+         .botão-padrão{
+            border: none;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: center;
+            background-color: #4F61FF;
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin: 0px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.6rem;
+            cursor: pointer;
+             margin: 20px 80px;
+         }
+         
+        .botão-padrão:hover{
+            transform: scale(1.03);
+            transition: all 1s ease;
+            background-color: #5f6fff;
+
+        }
+
+       @media(max-width:601px){
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+       }
+</style>
+<body>
+    <main>
+        <div class="contendo">
+    <div class="spin"></div>
+        <div class="container">
+        <div class="caixa linear">       </div>
+        <div class="caixa linear">       </div>
+        <div class="caixa linear">       </div>
+        <div class="caixa linear">       </div>
+        <div class="caixa linear">       </div>
+    </div>
+    <a href="./index.html" class="botão-padrão">Entrar</a>
+    </div>
+   </main>
+</body>
+</html>

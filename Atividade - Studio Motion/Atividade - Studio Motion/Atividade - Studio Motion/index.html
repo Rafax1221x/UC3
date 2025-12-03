@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <!--Linkamento com o CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para a logo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Titulo da Página-->
+    <title>Landing Page - Studio Motion</title>
+    <!--Link da Fonte-->
+
+</head>
+<body>
+   <!--Cabeçalho-->
+  <header class="cabeçalho">
+     <nav id="barra-de-navegação">
+      <!--Logo-->
+        <i class="fa-solid fa-camera-retro" id="logo">Motion</i>
+     <!--Itens da navegação-->
+     <ul id="itens-navegação">
+        <li class="item"><a href="#inicio">Inicio</a></li>
+         <li class="item"><a href="#sobre">Sobre nós</a></li>
+          <li class="item"><a href="#contato">Contato</a></li>
+     </ul>
+    
+   
+    <!--Menu Hamburguer-->  
+      <input type="checkbox" id="menu-escondido" class="menu-escondido">
+        <label for="menu-escondido" class="hamburguer">
+             <span class="linha linha1"></span>
+             <span class="linha linha2"></span>
+             <span class="linha linha3"></span>
+        </label>  
+        <!--Itens do Mobile--> 
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+     </nav> 
+    </header>
+    <!--Inicio-->
+    <!--Container principal do MAIN-->
+    <main id="contendo">
+         <section id="inicio">
+            
+            <div id="textos-principais-inicio">
+               <!--Texto principal do MAIN-->
+               <h1 class="titulo">Apaixonados por <span>Criatividade e Movimento</span>
+               </h1>
+               <!--Texto comum-->
+                 <p class="sub-titulo">
+                  Onde ideias ganham movimento. Criamos vídeos e designs cheios de energia, fluidez e inovação para marcas que querem se destacar em cada frame.
+                 </p>
+                 <!--Botão Padrão-->
+                 <div id="botão-inicio">
+                  <a href="" class="botão-padrão">Mais informações</a>
+                 </div>
+                 
+            </div>
+            <!--Imagem que está ao lado dos textos principais do Main, essas bolinhas azuis que estão na imagem foram feitas no Illustrator-->
+            <div id="banner">
+               <img src="./imagens/banner-studio-motion-1.png" alt="">
+            </div>
+            <div class="forma"></div>
+            </section>
+         <!--Botão whatsapp-->
+<a href="https://wa.me/5599999999999" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"  alt="WhatsApp">
+    </a>
+    </main>
+    <!--Titulo dos cards-->
+    <h1 class="titulo-card">Saiba mais sobre nós</h1>
+    <!--Container principal dos cards-->
+    <section class="container">
+      <!--Card 1-->
+      <div class="card">
+         <div class="card-image car-1"></div>
+         <h2>Produção Audiovisual Criativa</h2>
+         <p>Damos vida às suas ideias com uma equipe especializada em iluminação, direção e captação de imagem.</p>
+         <a href="">Saiba mais</a>            
+      </div>
+      <!--Card 2-->
+       <div class="card">
+         <div class="card-image car-2"></div>
+         <h2>Gravação e Entrevistas Profissionais</h2>
+         <p>Estrutura completa para gravações, entrevistas e conteúdo digital com qualidade de estúdio profissional.</p>
+         <a href="">Saiba mais</a>            
+      </div>
+      <!--Card 3-->
+       <div class="card">
+         <div class="card-image car-3"></div>
+         <h2>Os Bastidores da Criação Cinematográfica</h2>
+         <p>Descubra o processo por trás das câmeras e veja como transformamos roteiros em experiências visuais únicas para clientes.</p>
+         <a href="">Saiba mais</a>
+      </div>
+      
+    </section>
+      <!--footer-->
+      <hr>
+      <footer>
+         <!--Containter para os icones das redes sociais-->
+         <div class="redes-sociais">
+        <nav>
+         <ul class="itens-redes-sociais">
+            <li class="footergeral"><a href=""><img src="./imagens/instagram.png" alt="instagram" class="instagram"></a></li>
+            <li class="footergeral"><a href=""><img src="./imagens/youtube.png" alt="youtube" class="youtube"></a></li>
+            <li class="footergeral"><a href=""><img src="./imagens/facebook.png" alt="facebook" class="facebook"></a></li>
+         </ul>
+        </nav>      
+        </div>
+        <!--2 divs foram utilizadas aqui, pois foi necessario para deixá-los separados um do outro-->
+        <div class="ferramentas-footer">
+         <a href="" class="item-footer">Contato</a>
+         <a href="" class="item-footer">Termos de Uso</a>
+        </div>
+
+        <div class="ferramentas-footer">
+         <a href="" class="item-footer">Sobre nós</a>
+        </div>
+      </footer>
+</body>    
+</html>
